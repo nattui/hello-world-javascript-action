@@ -1,0 +1,11 @@
+name: Jest Example
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-lastest
+
+  strategy:
+    matrix:
+      node-version: [10.x, 12.x]
