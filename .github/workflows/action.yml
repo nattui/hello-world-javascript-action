@@ -3,13 +3,15 @@ name: Jest Example
 on: [push]
 
 jobs:
-#   strategy:
-#     matrix:
-#       node-version: [10.x, 12.x]
+  build:
 
-build:
     runs-on: ubuntu-lastest
-    - uses: actions/checkout@v1
-    - run: npm install
-    - run: npm run build
-    - run: npm test
+
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: '12.x'
+      - run: npm install
+      - run: npm run build
+      - run: npm test
