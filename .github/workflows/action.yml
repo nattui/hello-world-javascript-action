@@ -1,4 +1,4 @@
-name: Jest Example
+name: Node.js CI
 
 on: [push]
 
@@ -15,3 +15,5 @@ jobs:
       - run: npm install
       - run: npm run build
       - run: npm test
+        env:
+          CI: true
