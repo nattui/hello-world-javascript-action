@@ -1,2 +1,3 @@
-# learning-github-actions
-Learning GitHub Action with JavaScript
+# hello-world-javascript-action
+
+Learning GitHub JavaScript Action to automate workflow
