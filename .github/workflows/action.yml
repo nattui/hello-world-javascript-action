@@ -13,7 +13,7 @@ jobs:
         with:
           node-version: '12.x'
       - run: npm install --silent
-      - run: npm run build
+      # - run: npm run build
       # - run: npm run test
       # - run: echo ${{ secrets.SECRET_EXAMPLE }}
-      - run: npm run deploy -- --token=random_token_test
+      - run: npm run deploy -- --token=${{ secrets.ZEIT_TOKEN }}
