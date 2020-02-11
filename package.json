@@ -3,10 +3,16 @@
   "scripts": {
     "dev": "parcel src/index.html -d dist/development/ --open",
     "build": "parcel build src/index.html -d dist/production/ --no-source-maps --public-url ./",
-    "test": "jest"
+    "test": "jest",
+    "now:dev": "now dev",
+    "now:deploy": "now"
   },
   "devDependencies": {
     "jest": "^25.1.0",
-    "parcel-bundler": "^1.12.4"
+    "now": "latest",
+    "parcel-bundler": "latest"
+  },
+  "engines": {
+    "node": "12.x"
   }
 }

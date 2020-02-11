@@ -1,3 +1,4 @@
 .cache/
+.now/
 dist/
 node_modules/
