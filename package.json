@@ -4,8 +4,8 @@
     "dev": "parcel src/index.html -d dist/development/ --open",
     "build": "parcel build src/index.html -d dist/production/ --no-source-maps --public-url ./",
     "test": "jest",
-    "now:dev": "now dev",
-    "now:deploy": "now"
+    "deploy": "now --prod",
+    "deploy:dev": "now dev"
   },
   "devDependencies": {
     "jest": "^25.1.0",

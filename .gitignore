@@ -1,4 +1,5 @@
-.cache/
-.now/
-dist/
-node_modules/
+.cache
+.now
+dist
+node_modules
+.env
